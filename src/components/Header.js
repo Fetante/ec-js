@@ -26,21 +26,21 @@ const Header = () => {
                             </div>                        
                         </div>
                         <div class="social-media">
-                            {/* <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://twitter.com" target="blank"><i class="fa-brands fa-x-twitter"></i></a>
                             <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://linkedin.com" target="blank"><i class="fa-brands fa-linkedin"></i></a> */}
+                            <a href="https://linkedin.com" target="blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>           
                     </div>
                     <div class="main-menu">
                         <nav>
-                            {/* <a class="active" href="index.html">Home</a>
+                            <a class="active" href="index.html">Home</a>
                             <a href="services.html">Service</a>
                             <a href="news.html">News</a>
-                            <a href="contact.html">Contact</a> */}
+                            <a href="contact.html">Contact</a>
                         </nav>
                         <div class="login">                    
-                            {/* <a class="btn-theme btn-yellow" href="login.html">Login<i class="fa-regular fa-arrow-up-right"></i></a>  */}
+                            <a class="btn-theme btn-yellow" href="login.html">Login<i class="fa-regular fa-arrow-up-right"></i></a> 
                         
                         </div>
 

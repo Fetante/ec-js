@@ -16,7 +16,7 @@ export const Services = () => {
                         <h3>Business Advice</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div class="arrow-link">
-                            {/* <a class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></a> */}
+                            <button class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></button>
                         </div>
                         
                     </div>
@@ -25,25 +25,26 @@ export const Services = () => {
                         <h3>Startup Business</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div class="arrow-link">
-                            {/* <a class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></a> */}
+                            <button class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></button>
                         </div>                </div>
                     <div class="card financial-card active">
                         <p></p>
                         <h3>Financial Advise</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div class="arrow-link">
-                            {/* <a class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></a> */}
+                            <button class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></button>
                         </div>                </div>
                     <div class="card risk-card active">
                         <p></p>
                         <h3>Risk Management</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div class="arrow-link">
-                            {/* <a class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></a> */}
-                        </div>                </div>
+                            <button class="btn-round" href=""><i class="fa-thin fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="btn-services">
-                    {/* <a class="btn-theme btn-transparent">Browse Services<i class="fa-regular fa-arrow-up-right"></i></a> */}
+                    <button class="btn-theme btn-transparent">Browse Services<i class="fa-regular fa-arrow-up-right"></i></button>
                 </div>
                 
             </div>

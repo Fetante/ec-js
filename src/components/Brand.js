@@ -1,10 +1,12 @@
 import React from 'react';
+import wavyLines from '../img/background-wavy-lines-white.svg';
+import daria from '../img/daria-pimkina-tYaccl19A3Q-unsplash.jpg';
 
 const Brand = () => {
   return (
     <div>
       <section className="brand-section">
-        <img className="wavy-lines" src="./img/background-wavy-lines-white.svg" alt="" />
+        <img className="wavy-lines" src={wavyLines} alt="" />
         <div className="container">
           <div className="brand-top">
             <img src="./img/paperz.svg" alt="" />
@@ -21,9 +23,9 @@ const Brand = () => {
               <div className="section-title features">
                 <p>Features</p>
                 <h2>Our Accounting is trusted by thousand of companies</h2>
-                {/* <a className="btn-theme btn-yellow btn-features" href="">
+                <button className="btn-theme btn-yellow btn-features" href="">
                   Learn More<i className="fa-regular fa-arrow-up-right"></i>
-                </a> */}
+                </button>
               </div>
 
               <div className="business-advise">
@@ -60,7 +62,7 @@ const Brand = () => {
               <span>Founder</span>
               <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
             </div>
-            <img src="./img/daria-pimkina-tYaccl19A3Q-unsplash.jpg" alt="imgae of the founder" />
+            <img src={daria} alt="imgae of the founder" />
           </div>
 
           <div className="about-company section-title">
@@ -74,9 +76,9 @@ const Brand = () => {
             </p>
 
             <div className="video">
-              {/* <a className="btn-theme btn-black" href="">
+              <button className="btn-theme btn-black" href="">
                 Learn More <i className="fa-regular fa-arrow-up-right"></i>
-              </a> */}
+              </button>
               <div className="video-btn-container">
                 <button className="play-btn"><i className="fas fa-play"></i></button>
                 <span>Intro Video</span>

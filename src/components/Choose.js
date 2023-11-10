@@ -1,4 +1,5 @@
 import React from 'react'
+import choose from '../img/choose.jpg'
 
 const Choose = () => {
   return (
@@ -37,7 +38,7 @@ const Choose = () => {
 
                 <div class="choose-img-container">
                     
-                    <img src="./img/choose.jpg" alt=""/>
+                    <img src={choose} alt=""/>
                     <div class="background-area-color"></div>
                 </div>
                 

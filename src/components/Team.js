@@ -1,4 +1,12 @@
 import React from 'react'
+import kristine from '../img/kristine.jpg'
+import mark from '../img/mark.jpg'
+import kimberly from '../img/kimberly.jpg'
+import justin from '../img/justin.jpg'
+import cassandra from '../img/cassandra.jpg'
+import amanda from '../img/amanda.jpg'
+import jack from '../img/jack1.jpg'
+
 
 const Team = () => {
   return (
@@ -17,22 +25,22 @@ const Team = () => {
                 </div>
                 <div class="team-cards">
                     <div class="team-card kristine">
-                        <img src="./img/kristine.jpg" alt=""/>
+                        <img src={kristine} alt=""/>
                         <h3>Kristine Palmer</h3>
                         <p>Chief Operation Officer</p>
                     </div>
                     <div class="team-card mark">
-                        <img src="./img/mark.jpg" alt=""/>
+                        <img src={mark} alt=""/>
                         <h3>Mark Aubri</h3>
                         <p>Senior Consultant</p>
                     </div>
                     <div class="team-card kimberly">
-                        <img src="./img/kimberly.jpg" alt=""/>
+                        <img src={kimberly} alt=""/>
                         <h3>Kimberly Hansen</h3>
                         <p>Senior Consultant</p>
                     </div>
                     <div class="team-card justin">
-                        <img src="./img/justin.jpg" alt=""/>
+                        <img src={justin} alt=""/>
                         <h3>Justin Willoman</h3>
                         <p>Senior Tech Consultant</p>
                     </div>
@@ -59,7 +67,7 @@ const Team = () => {
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                                 <div class="info-wrapper">
                                     <div class="testimonial-image">
-                                        <img src="./img/cassandra.jpg" alt=""/>
+                                        <img src={cassandra} alt=""/>
                                         
                                     </div>
                                     <div class="testimonial-info">
@@ -79,7 +87,7 @@ const Team = () => {
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                                 <div class="info-wrapper">
                                     <div class="testimonial-image">
-                                        <img src="./img/amanda.jpg" alt=""/>
+                                        <img src={amanda} alt=""/>
                                         
                                     </div>
                                     <div class="testimonial-info">
@@ -101,7 +109,7 @@ const Team = () => {
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                                 <div class="info-wrapper">
                                     <div class="testimonial-image">
-                                        <img src="./img/jack1.jpg" alt=""/>                                                                  
+                                        <img src={jack} alt=""/>                                                                  
                                     </div>
 
                                     <div class="testimonial-info">
@@ -115,7 +123,7 @@ const Team = () => {
                     </div>
                     
                     <div class="all-reviews">
-                        {/* <a class="btn-theme btn-black" href="#">All Reviews<i class="fa-regular fa-arrow-up-right"></i></a> */}
+                        <button class="btn-theme btn-black" href="#">All Reviews<i class="fa-regular fa-arrow-up-right"></i></button>
                     </div>
                     
                 </div>

@@ -1,4 +1,9 @@
 import React from 'react'
+import growBusiness from '../img/grow-business.jpg'
+import client from '../img/client.jpg'
+import educate from '../img/educate.jpg'
+import insights from '../img/insights.jpg'
+
 
 const Projects = () => {
   return (
@@ -11,29 +16,29 @@ const Projects = () => {
             </div>
             <div class="project-and-cases">
                 <article>
-                    <img src="./img/grow-business.jpg" alt="Business man reading a business newspaper"/>
+                    <img src={growBusiness} alt="Business man reading a business newspaper"/>
                     <h3>Grow your business</h3>
-                    {/* <a href="">Read More <i class="fa-regular fa-arrow-up-right"></i></a> */}
+                    <button href="">Read More <i class="fa-regular fa-arrow-up-right"></i></button>
 
                 </article>
                 <article>
-                    <img src="./img/client.jpg" alt="Tablet, smart watch and glasses on a desk"/>
+                    <img src={client} alt="Tablet, smart watch and glasses on a desk"/>
                     <h3>Why your client needs a responsive website</h3>
-                    {/* <a href="">Read More <i class="fa-regular fa-arrow-up-right"></i></a> */}
+                    <button href="">Read More <i class="fa-regular fa-arrow-up-right"></i></button>
                 </article>
                 <article>
-                    <img src="./img/educate.jpg" alt="Desktop with a laptop, a mug, a pen and paper. "/>
+                    <img src={educate} alt="Desktop with a laptop, a mug, a pen and paper. "/>
                     <h3>Educate your employees to get better results</h3>
-                    {/* <a href="">Read More <i class="fa-regular fa-arrow-up-right"></i></a> */}
+                    <button href="">Read More <i class="fa-regular fa-arrow-up-right"></i></button>
                 </article>
                 <article> 
-                    <img src="./img/insights.jpg" alt="Laptop with charts on a desk"/>
+                    <img src={insights} alt="Laptop with charts on a desk"/>
                     <h3>Business insights is a important piece of your business</h3>
-                    {/* <a href="">Read More <i class="fa-regular fa-arrow-up-right"></i></a> */}
+                    <button href="">Read More <i class="fa-regular fa-arrow-up-right"></i></button>
                 </article>
             </div>
             <div class="all-projects">
-                {/* <a class="btn-theme btn-black" href="">All Recent Projects <i class="fa-regular fa-arrow-up-right"></i></a> */}
+                <button class="btn-theme btn-black" href="">All Recent Projects <i class="fa-regular fa-arrow-up-right"></i></button>
             </div>
             
         </div>

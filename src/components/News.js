@@ -1,4 +1,7 @@
 import React from 'react'
+import business from '../img/business1.jpg'
+import business2 from '../img/business2.jpg'
+import business3 from '../img/business3.jpg'
 
 const News = () => {
   return (
@@ -11,7 +14,7 @@ const News = () => {
                     <h2>Get Every Single Article & News</h2>
                 </div>
                 <div class="browse-articles">
-                    {/* <a class="btn-theme btn-transparent" href="">Browse Articles<i class="fa-regular fa-arrow-up-right"></i></a> */}
+                    <button class="btn-theme btn-transparent" href="">Browse Articles<i class="fa-regular fa-arrow-up-right"></i></button>
                 </div>
             </div>
 
@@ -23,7 +26,7 @@ const News = () => {
                             <p class="date-number">25</p>
                             <p>Mar</p>
                         </div>
-                        <img src="./img/business1.jpg" alt=""/>
+                        <img src={business} alt=""/>
                     </div>
                     <p>Business</p>                
                     <h3>How To Use Digitalization In The Classroom</h3>
@@ -36,7 +39,7 @@ const News = () => {
                             <p class="date-number">17</p>
                             <p>Mar</p>
                         </div>
-                        <img src="./img/business2.jpg" alt=""/>
+                        <img src={business2} alt=""/>
                     </div>                    
                     <p>Business</p>
                     <h3>How To Implement Chat GPT In Your Projects</h3>
@@ -49,7 +52,7 @@ const News = () => {
                             <p class="date-number">13</p>
                             <p>Mar</p>
                         </div>
-                        <img src="./img/business3.jpg" alt=""/>
+                        <img src={business3} alt=""/>
                     </div>                    
                     <p>Business</p>
                     <h3>The Guide To Support Modern CSS Design</h3>
