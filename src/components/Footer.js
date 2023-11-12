@@ -56,10 +56,10 @@ const Footer = () => {
                     </p>
                 </div>
                 <div class="social-media">
-                    <button href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></button>
-                    <button href="https://twitter.com" target="blank"><i class="fa-brands fa-x-twitter"></i></button>
-                    <button href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></button>
-                    <button href="https://linkedin.com" target="blank"><i class="fa-brands fa-linkedin"></i></button>
+                    <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>

@@ -1431,15 +1431,15 @@ footer .footer-bottom .container .copyrights p {
 footer .footer-bottom .container .social-media {
   align-items: end;
 }
-footer .footer-bottom .container .social-media button {
+footer .footer-bottom .container .social-media a {
   color: #FFFFFF;
   margin-left: 26px;
   margin-bottom: 10px;
 }
-footer .footer-bottom .container .social-media button:hover i {
+footer .footer-bottom .container .social-media a:hover i {
   color: #586870;
 }
-footer .footer-bottom .container .social-media button i {
+footer .footer-bottom .container .social-media a i {
   transition: color 0.2s ease-in-out;
 }
 

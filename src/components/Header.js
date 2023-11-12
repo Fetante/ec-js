@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../img/logotype.svg'
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
         <header>
             <div class="container">
                 <div class="logotype">
-                    <img src="./img/logotype.svg" alt="company logotype" />
+                    <img src={logo} alt="company logotype" />
                 </div>
                 <button class="hamburger"><i class="fa-regular fa-bars"></i></button>
                 <div class="menu">
@@ -40,8 +41,7 @@ const Header = () => {
                             <a href="contact.html">Contact</a>
                         </nav>
                         <div class="login">                    
-                            <a class="btn-theme btn-yellow" href="login.html">Login<i class="fa-regular fa-arrow-up-right"></i></a> 
-                        
+                            <a class="btn-theme btn-yellow" href="login.html">Login<i class="fa-regular fa-arrow-up-right"></i></a>                        
                         </div>
 
                         
