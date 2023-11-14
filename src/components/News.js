@@ -6,24 +6,24 @@ import business3 from '../img/business3.jpg'
 const News = () => {
   return (
     <div>
-        <section class="news-section">
-        <div class="container">
-            <div class="title-wrapper">
-                <div class="section-title">
+        <section className="news-section">
+        <div className="container">
+            <div className="title-wrapper">
+                <div className="section-title">
                     <p>Article & News</p>
                     <h2>Get Every Single Article & News</h2>
                 </div>
-                <div class="browse-articles">
-                    <button class="btn-theme btn-transparent" href="">Browse Articles<i class="fa-regular fa-arrow-up-right"></i></button>
+                <div className="browse-articles">
+                    <button className="btn-theme btn-transparent" href="">Browse Articles<i className="fa-regular fa-arrow-up-right"></i></button>
                 </div>
             </div>
 
-            <div class="business-card-wrapper">
+            <div className="business-card-wrapper">
 
-                <div class="business-card">
-                    <div class="img-container">
-                        <div class="date-sticker">
-                            <p class="date-number">25</p>
+                <div className="business-card">
+                    <div className="img-container">
+                        <div className="date-sticker">
+                            <p className="date-number">25</p>
                             <p>Mar</p>
                         </div>
                         <img src={business} alt=""/>
@@ -33,10 +33,10 @@ const News = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                 </div>
 
-                <div class="business-card">
-                    <div class="img-container">
-                        <div class="date-sticker">
-                            <p class="date-number">17</p>
+                <div className="business-card">
+                    <div className="img-container">
+                        <div className="date-sticker">
+                            <p className="date-number">17</p>
                             <p>Mar</p>
                         </div>
                         <img src={business2} alt=""/>
@@ -46,10 +46,10 @@ const News = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                 </div>
 
-                <div class="business-card">
-                    <div class="img-container">
-                        <div class="date-sticker">
-                            <p class="date-number">13</p>
+                <div className="business-card">
+                    <div className="img-container">
+                        <div className="date-sticker">
+                            <p className="date-number">13</p>
                             <p>Mar</p>
                         </div>
                         <img src={business3} alt=""/>

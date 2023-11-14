@@ -1483,9 +1483,10 @@ footer .footer-bottom .container .social-media a i {
   font-style: normal;
   text-align: center;
 }
-.connect-showcase-section .container button {
+.connect-showcase-section .container a {
   text-decoration: none;
   color: #191919;
+  margin-right: 10px;
 }
 
 .contact-us-section .container {
@@ -1566,19 +1567,19 @@ footer .footer-bottom .container .social-media a i {
 .contact-us-section .container .card-container .card .card-contacts {
   padding-top: 6px;
 }
-.contact-us-section .container .form-contact {
+.container .form-contact {
   width: 100%;
   background-color: #F0EFE9;
   text-align: center;
   padding-top: 124px;
   padding-bottom: 100px;
 }
-.contact-us-section .container .form-contact form {
+.container .form-contact form {
   display: flex;
   flex-direction: column;
 }
-.contact-us-section .container .form-contact form input,
-.contact-us-section .container .form-contact form textarea {
+.container .form-contact form input,
+.container .form-contact form textarea {
   display: block;
   border-radius: 40px;
   border: 1px solid #ffffff;
@@ -1589,11 +1590,11 @@ footer .footer-bottom .container .social-media a i {
   padding-bottom: 5px;
   width: 77%;
 }
-.contact-us-section .container .form-contact form textarea {
+.container .form-contact form textarea {
   height: 160px;
   margin-bottom: 44px;
 }
-.contact-us-section .container .form-contact form h2 {
+.container .form-contact form h2 {
   font-family: "DM Sans";
   font-size: 45px;
   font-weight: bold;
@@ -1604,14 +1605,22 @@ footer .footer-bottom .container .social-media a i {
   width: 33%;
   margin: 0 auto;
 }
-.contact-us-section .container .form-contact form button {
+.container .form-contact form .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+.container .form-contact form button {
   display: block;
   border-radius: 40px;
   margin: auto;
   width: 77%;
   height: 56px;
 }
-
+.container .form-contact form .form-message {
+  color:cadetblue;
+}
 .map-section {
   height: 620px;
   margin-top: 120px;

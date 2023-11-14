@@ -4,46 +4,46 @@ import choose from '../img/choose.jpg'
 const Choose = () => {
   return (
     <div>
-         <section class="choose-section">
-            <div class="container">
-                <div class="section-title">
+         <section className="choose-section">
+            <div className="container">
+                <div className="section-title">
                     <p>Why Choose Us</p>
                     <h2>Why We Are The Best Business Consulting Agency</h2>
                     
-                    <div class="choose-grid">
-                        <i class="fa-light fa-thumbs-up"></i>
-                        <div class="excellence">
+                    <div className="choose-grid">
+                        <i className="fa-light fa-thumbs-up"></i>
+                        <div className="excellence">
                             <h3>Process Excellence</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
                         
-                        <i class="fa-sharp fa-regular fa-gem"></i>
-                        <div class="planning">
+                        <i className="fa-sharp fa-regular fa-gem"></i>
+                        <div className="planning">
                             <h3>Strategic Planning</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
                         
-                        <i class="fa-light fa-circle-nodes"></i>
-                        <div class="design">
+                        <i className="fa-light fa-circle-nodes"></i>
+                        <div className="design">
                             <h3>Experience Design</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
-                        <i class="fa-light fa-head-side-gear"></i>
-                        <div class="ai">
+                        <i className="fa-light fa-head-side-gear"></i>
+                        <div className="ai">
                             <h3>Artificial Inteligence</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="choose-img-container">
+                <div className="choose-img-container">
                     
                     <img src={choose} alt=""/>
-                    <div class="background-area-color"></div>
+                    <div className="background-area-color"></div>
                 </div>
                 
             </div>
-            <div class="background-element"></div>
+            <div className="background-element"></div>
         </section>
     </div>
   )
