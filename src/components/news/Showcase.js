@@ -10,9 +10,9 @@ const Showcase = () => {
                 <div className="container">
                     <div className="links">
                         <a href="/">Home</a>
-                        <a href="contacts">Contact</a>
+                        <a href="news">News</a>
                     </div>
-                    <h1>Let's Connect</h1>                    
+                    <h1>News & Articles</h1>                    
                 </div>
             </div>
         </section>

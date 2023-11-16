@@ -4,7 +4,8 @@ import Footer from '../components/Footer'
 import ContactUs from '../components/contacts/ContactUs'
 import Showcase from '../components/contacts/Showcase'
 import Map from '../components/contacts/Map'
-import { RegistrationForm } from '../components/contacts/RegistrationForm'
+import { RegForm } from '../components/contacts/RegForm'
+// import { RegistrationForm } from '../components/contacts/RegistrationForm'
 
 const Contacts = () => {
   return (
@@ -13,7 +14,8 @@ const Contacts = () => {
       <main>        
         <Showcase />
         <ContactUs />
-        <RegistrationForm />
+        {/* <RegistrationForm /> */}
+        <RegForm />
         <Map />
         
         

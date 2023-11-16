@@ -1585,11 +1585,16 @@ footer .footer-bottom .container .social-media a i {
   border: 1px solid #ffffff;
   outline: none;
   margin: 0 auto 16px;
-  padding-left: 36px;
+  padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 5px;
-  width: 77%;
+  max-width: 77%;
+  width: 100%;
 }
+.container .form-contact form label {
+  margin-bottom: 5px;
+}
+
 .container .form-contact form textarea {
   height: 160px;
   margin-bottom: 44px;
@@ -1609,7 +1614,7 @@ footer .footer-bottom .container .social-media a i {
   display: flex;
   flex-direction: column;
   text-align: left;
-  justify-content: center;
+  align-content: center;
 }
 .container .form-contact form button {
   display: block;
@@ -1627,4 +1632,69 @@ footer .footer-bottom .container .social-media a i {
 }
 .map-section iframe {
   height: 100%;
+}
+.error {
+  color: rgb(241, 77, 77)
+}
+
+.articles {
+  margin-top: 35px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  justify-items: center;
+  align-items: stretch; /* Säkerställ att alla rader har samma höjd */
+}
+@media (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.all-articles h2 {
+  margin-top: 130px;
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;  
+  color: #191919;
+}
+
+.articles .article-item {
+  width: 100%;
+  height: 428px; /* Fyll hela höjden av föräldern (grid-raden) */
+  display: flex;
+  flex-direction: column;
+}
+
+.articles .article-item h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;  
+  color: #191919;
+}
+
+.articles .article-item p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  font-style: normal;  
+  color: #6a6c71;
+  flex-grow: 1;
+}
+
+.articles .article-item img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; /* Fyll hela utrymmet utan att deformeras */
 }
