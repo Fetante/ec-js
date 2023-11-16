@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../img/logotype.svg'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -34,12 +35,12 @@ const Header = () => {
                         </div>           
                     </div>
                     <div className="main-menu">
-                        <nav>
-                            <a className="active" href="/">Home</a>
-                            <a href="services">Service</a>
-                            <a href="news">News</a>
-                            <a href="contacts">Contact</a>
-                        </nav>
+                    <nav>
+                        <Link to="/" className="active">Home</Link>
+                        <Link to="/services">Service</Link>
+                        <Link to="/news">News</Link>
+                        <Link to="/contacts">Contact</Link>
+                    </nav>
                         <div className="login">                    
                             <a className="btn-theme btn-yellow" href="login">Login<i className="fa-regular fa-arrow-up-right"></i></a>
                         </div>                        

@@ -1,30 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback  } from 'react'
 import { useParams } from 'react-router-dom';
 
 const Article = () => {
-    const { id } = useParams();
-    
-    // 1. Hämta artikeln från apiet med det särskilda id't
+    const { id } = useParams(); 
 
-    
-
-    // Hämta alla artiklar med fetch
+    // Hämta artikeln  
     const [article, setArticle] = useState({})
 
-    useEffect(() => {
-        getArticle()
-    }, [])
+    
 
-    const getArticle = async () => {
+    const getArticle = useCallback(async () => {
         if (id !== undefined) {
             const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
             
             if (result.status === 200)
                 setArticle(await result.json())
         }
+    }, [id]); // Lägg till 'id' som ett beroende för useCallback
 
-    }
-    // 2. 
+    useEffect(() => {
+        getArticle()
+    }, [getArticle])
+    
 
 
 
