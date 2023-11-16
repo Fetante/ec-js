@@ -1,12 +1,23 @@
 import React from 'react'
+import Header from '../components/Header'
+import Showcase from '../components/news/Showcase'
+import Article from '../components/newsDetails/Article'
+import News from '../components/News'
+import Footer from '../components/Footer'
+
+
 
 const NewsDetails = () => {
 
-  // När man klickar på en artikel i News så ska man komma till denna sidan. Denna sidan
-  // Ska visa detaljer om den enskilda artikeln. 
 
   return (
-    <div>NewsDetails</div>
+    <div>
+      <Header />
+      <Showcase />
+      <Article />
+      <News />
+      <Footer />
+    </div>
   )
 }
 

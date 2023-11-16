@@ -1698,3 +1698,13 @@ footer .footer-bottom .container .social-media a i {
   height: 50%;
   object-fit: cover; /* Fyll hela utrymmet utan att deformeras */
 }
+
+.article-wrapper {
+  display: flex;
+  margin-top: 130px;
+  margin-bottom: 75px;
+}
+
+.articles a {
+  text-decoration: none;
+}

@@ -44,7 +44,8 @@ function App() {
         <Route path='/' element={ <Home/> } />
         <Route path='/contacts' element={ <Contacts/> } />
         <Route path='/news' element={ <News/> } />
-        <Route path='/newsdetails' element={ <NewsDetails/> } />
+        <Route path='news/:id' element={ <NewsDetails/> } />
+        {/* <Route path='/news/:articleId' element={NewsDetails}></Route> */}
         <Route path='/*' element={ <NotFound/> } />
       </Routes>
     </BrowserRouter>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Articles = () => {
 
@@ -24,12 +25,14 @@ const getArticles = async () => {
             
             {
             articles.map(article => (
-            <div className="article-item" key={article.id}>
-                <img src={article.imageUrl} alt={article.title} />
-                <p>{article.category}</p>
-                <h3>{article.title}</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-            </div>
+                <Link key={article.id} to={`/news/${article.id}`}>
+                    <div className="article-item" key={article.id}>
+                        <img src={article.imageUrl} alt={article.title} />
+                        <p>{article.category}</p>
+                        <h3>{article.title}</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                    </div>
+                </Link>
             ))
             }
         </div>
