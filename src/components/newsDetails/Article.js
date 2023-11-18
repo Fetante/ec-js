@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useCallback  } from 'react'
 import { useParams } from 'react-router-dom';
+import { format } from 'date-fns';
 
 const Article = () => {
-    const { id } = useParams(); 
-
+    const { id } = useParams();
+    
     // Hämta artikeln  
     const [article, setArticle] = useState({})
 
@@ -22,7 +23,9 @@ const Article = () => {
         getArticle()
     }, [getArticle])
     
-
+    const formattedDate = article.published
+    ? format(new Date(article.published), 'MMM dd, yyyy')
+    : '';
 
 
   return (
@@ -30,21 +33,36 @@ const Article = () => {
         <div className="container article-wrapper">
             <div className="article-card">
                 <h2>{article.title}</h2>
-                <p>artikel datum</p>
-                <p>artikel kategori</p>
-                <p>artikel författare</p>
-                <img src="" alt="bild-titel" />
+                <p>{formattedDate}</p>
+                <p className="yellow-circle"></p>
+                <p>{article.category}</p>
+                <p className="yellow-circle"></p>
+                <p>{article.author}</p>
+                <img src={article.imageUrl} alt="bild-titel" />
+                <p className="article-text">
+                    {article.content}
+                </p>
+
+                <div className="quotes">
+                    <div className="icon-quotes">
+                        <i className="fa-solid fa-apostrophe"></i> 
+                        <i className="fa-solid fa-apostrophe"></i>
+                    </div>
+                    <blockquote>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+                    </blockquote>
+                </div>
+
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. uspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-            </p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+                </p>
 
-            <blockquote>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-            </blockquote>
-
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-            </p>
+                <button className="popular-searchword">Digitalization</button>
+                <button className="popular-searchword">School</button>
+                <button className="popular-searchword">IT</button>
+                <button className="popular-searchword">Design</button>
+                <button className="popular-searchword">Work</button>
+                <button className="popular-searchword">Tech</button>
 
             </div>
 

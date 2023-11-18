@@ -15,7 +15,7 @@ const NewsDetails = () => {
       <Header />
       <Showcase />
       <Article />
-      <News />
+      <News backgroundColor="#f0efe9"/>
       <Footer />
     </div>
   )

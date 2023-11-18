@@ -1122,7 +1122,7 @@ header .main-menu nav a:hover {
 }
 
 .news-section {
-  background-color: #FFFFFF;
+  
   height: 852px;
 }
 .news-section .container {
@@ -1704,7 +1704,126 @@ footer .footer-bottom .container .social-media a i {
   margin-top: 130px;
   margin-bottom: 75px;
 }
+.yellow-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f9d783; /* Ändra färgen om du vill ha en annan än gul */
+  border-radius: 50%; /* Gör den till en cirkel */
+  margin: 0 15px; /* Justera utrymmet mellan cirklar här om det behövs */
+}
 
 .articles a {
   text-decoration: none;
+}
+
+.article-card {
+  flex: 2;
+  margin-right: 150px;
+}
+.article-aside {
+  flex: 1;
+  padding-top: 85px;
+}
+.article-card p {
+  display: inline-block;
+}
+.article-card h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;  
+  color: #191919;
+  margin-bottom: 35px;
+}
+.article-card .article-text {
+  margin-bottom: 50px;
+}
+.article-card img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+  object-fit: cover;
+}
+
+.article-card blockquote{
+  vertical-align: top;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+  font-style: italic;  
+  color: #191919;
+  margin-bottom: 50px;
+}
+.quotes {
+  display: flex;
+}
+.article-card i {
+  margin-top: 28px;
+  display: inline;
+  margin-right: 2px;
+}
+.article-card button {
+  width: 114px;
+  height: 40px;
+  border-radius: 40px;
+  background: rgba(25,25,25,0.05);
+  border: none;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+  margin-top: 26px;
+  margin-right: 12px;
+}
+.article-aside input {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  background: #f3f3f3;
+  border: none;
+  padding-left: 15px;
+}
+.article-aside .recent-posts {
+  border: 1px solid lightgrey;
+  padding: 40px;
+  margin-top: 40px;
+}
+.article-aside .recent-posts h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  color: #191919;
+}
+.article-aside .recent-posts h4 {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  font-style: normal;
+  color: #191919;
+}
+.article-aside .recent-posts p {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal; 
+  color: rgba(25,25,25,0.7 );
+}
+.article-aside .categories {
+  border: 1px solid lightgrey;
+  padding: 40px;
+  margin-top: 40px;
 }

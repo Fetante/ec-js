@@ -22,7 +22,7 @@ const Home = () => {
         <Choose />
         <Projects />
         <Team />
-        <News />
+        <News backgroundColor="#fff"/>
         <Signup />
         <Footer />
     </div>
