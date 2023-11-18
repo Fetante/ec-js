@@ -1,5 +1,5 @@
 import React from 'react'
-import choose from '../img/choose.jpg'
+import choose from '../../img/choose.jpg'
 
 const Choose = () => {
   return (

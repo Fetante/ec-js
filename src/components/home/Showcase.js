@@ -1,6 +1,6 @@
 import React from 'react'
-import showcaseImage from '../img/showcase-image.svg';
-import backgroundLines from '../img/background-lines.svg';
+import showcaseImage from '../../img/showcase-image.svg';
+import backgroundLines from '../../img/background-lines.svg';
 
 const Showcase = () => {
   return (

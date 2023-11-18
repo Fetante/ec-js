@@ -1,5 +1,5 @@
 import React from 'react'
-import wavyLines from '../img/background-wavy-lines.svg'
+import wavyLines from '../../img/background-wavy-lines.svg'
 
 const Signup = () => {
   return (

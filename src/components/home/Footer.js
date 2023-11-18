@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../img/logotype-white.svg'
-import lines from '../img/background-lines-white-right.svg'
+import logo from '../../img/logotype-white.svg'
+import lines from '../../img/background-lines-white-right.svg'
 
 const Footer = () => {
   return (

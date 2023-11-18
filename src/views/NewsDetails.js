@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
+import Header from '../components/home/Header'
 import Showcase from '../components/news/Showcase'
 import Article from '../components/newsDetails/Article'
-import News from '../components/News'
-import Footer from '../components/Footer'
+import News from '../components/home/News'
+import Footer from '../components/home/Footer'
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import growBusiness from '../img/grow-business.jpg'
-import client from '../img/client.jpg'
-import educate from '../img/educate.jpg'
-import insights from '../img/insights.jpg'
+import growBusiness from '../../img/grow-business.jpg'
+import client from '../../img/client.jpg'
+import educate from '../../img/educate.jpg'
+import insights from '../../img/insights.jpg'
 
 
 const Projects = () => {

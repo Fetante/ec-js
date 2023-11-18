@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/logotype.svg'
+import logo from '../../img/logotype.svg'
 import { Link } from 'react-router-dom';
 
 const Header = () => {

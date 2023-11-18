@@ -1,11 +1,11 @@
 import React from 'react'
-import kristine from '../img/kristine.jpg'
-import mark from '../img/mark.jpg'
-import kimberly from '../img/kimberly.jpg'
-import justin from '../img/justin.jpg'
-import cassandra from '../img/cassandra.jpg'
-import amanda from '../img/amanda.jpg'
-import jack from '../img/jack1.jpg'
+import kristine from '../../img/kristine.jpg'
+import mark from '../../img/mark.jpg'
+import kimberly from '../../img/kimberly.jpg'
+import justin from '../../img/justin.jpg'
+import cassandra from '../../img/cassandra.jpg'
+import amanda from '../../img/amanda.jpg'
+import jack from '../../img/jack1.jpg'
 
 
 const Team = () => {

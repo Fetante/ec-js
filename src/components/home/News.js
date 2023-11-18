@@ -1,7 +1,7 @@
 import React from 'react'
-import business from '../img/business1.jpg'
-import business2 from '../img/business2.jpg'
-import business3 from '../img/business3.jpg'
+import business from '../../img/business1.jpg'
+import business2 from '../../img/business2.jpg'
+import business3 from '../../img/business3.jpg'
 
 const News = ({backgroundColor }) => {
   return (

@@ -1,15 +1,15 @@
 import '../App.css';
 import React from 'react'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Showcase from '../components/Showcase';
-import Brand from '../components/Brand';
-import { Services } from '../components/Services';
-import Choose from '../components/Choose';
-import Projects from '../components/Projects';
-import Team from '../components/Team';
-import News from '../components/News';
-import Signup from '../components/Signup';
+import Header from '../components/home/Header';
+import Footer from '../components/home/Footer';
+import Showcase from '../components/home/Showcase';
+import Brand from '../components/home/Brand';
+import { Services } from '../components/home/Services';
+import Choose from '../components/home/Choose';
+import Projects from '../components/home/Projects';
+import Team from '../components/home/Team';
+import News from '../components/home/News';
+import Signup from '../components/home/Signup';
 
 
 const Home = () => {

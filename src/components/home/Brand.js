@@ -1,6 +1,6 @@
 import React from 'react';
-import wavyLines from '../img/background-wavy-lines-white.svg';
-import daria from '../img/daria-pimkina-tYaccl19A3Q-unsplash.jpg';
+import wavyLines from '../../img/background-wavy-lines-white.svg';
+import daria from '../../img/daria-pimkina-tYaccl19A3Q-unsplash.jpg';
 
 const Brand = () => {
   return (
