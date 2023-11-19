@@ -3,6 +3,7 @@ import growBusiness from '../../img/grow-business.jpg'
 import client from '../../img/client.jpg'
 import educate from '../../img/educate.jpg'
 import insights from '../../img/insights.jpg'
+import GlobalProject from './GlobalProject'
 
 
 const Projects = () => {
@@ -15,27 +16,10 @@ const Projects = () => {
                 <h2>Let`s Looks Our Global Projects</h2> 
             </div>
             <div className="project-and-cases">
-                <article>
-                    <img src={growBusiness} alt="Business man reading a business newspaper"/>
-                    <h3>Grow your business</h3>
-                    <button href="">Read More <i className="fa-regular fa-arrow-up-right"></i></button>
-
-                </article>
-                <article>
-                    <img src={client} alt="Tablet, smart watch and glasses on a desk"/>
-                    <h3>Why your client needs a responsive website</h3>
-                    <button href="">Read More <i className="fa-regular fa-arrow-up-right"></i></button>
-                </article>
-                <article>
-                    <img src={educate} alt="Desktop with a laptop, a mug, a pen and paper. "/>
-                    <h3>Educate your employees to get better results</h3>
-                    <button href="">Read More <i className="fa-regular fa-arrow-up-right"></i></button>
-                </article>
-                <article> 
-                    <img src={insights} alt="Laptop with charts on a desk"/>
-                    <h3>Business insights is a important piece of your business</h3>
-                    <button href="">Read More <i className="fa-regular fa-arrow-up-right"></i></button>
-                </article>
+                <GlobalProject img={growBusiness} alt="Business man reading a business newspaper" title="Grow your business" />
+                <GlobalProject img={client} alt="Tablet" title="Why your client needs a responsive website" />
+                <GlobalProject img={educate} alt="Desktop with a laptop, a mug, a pen and paper." title="Educate your employees to get better results" />
+                <GlobalProject img={insights} alt="Laptop with charts on a desk" title="Business insights is a important piece of your business" />
             </div>
             <div className="all-projects">
                 <button className="btn-theme btn-black" href="">All Recent Projects <i className="fa-regular fa-arrow-up-right"></i></button>

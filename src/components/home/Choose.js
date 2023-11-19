@@ -1,5 +1,6 @@
 import React from 'react'
 import choose from '../../img/choose.jpg'
+import ChooseOption from './ChooseOption'
 
 const Choose = () => {
   return (
@@ -11,28 +12,10 @@ const Choose = () => {
                     <h2>Why We Are The Best Business Consulting Agency</h2>
                     
                     <div className="choose-grid">
-                        <i className="fa-light fa-thumbs-up"></i>
-                        <div className="excellence">
-                            <h3>Process Excellence</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                        
-                        <i className="fa-sharp fa-regular fa-gem"></i>
-                        <div className="planning">
-                            <h3>Strategic Planning</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                        
-                        <i className="fa-light fa-circle-nodes"></i>
-                        <div className="design">
-                            <h3>Experience Design</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                        <i className="fa-light fa-head-side-gear"></i>
-                        <div className="ai">
-                            <h3>Artificial Inteligence</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
+                        <ChooseOption iconClass="fa-light fa-thumbs-up" className="excellence" title="Process Excellence" />
+                        <ChooseOption iconClass="fa-sharp fa-regular fa-gem" className="planning" title="Strategic Planning" />
+                        <ChooseOption iconClass="fa-light fa-circle-nodes" className="design" title="Experience Design" />
+                        <ChooseOption iconClass="fa-light fa-head-side-gear" className="ai" title="Artificial Inteligence" />                        
                     </div>
                 </div>
 

@@ -1,6 +1,13 @@
 import React from 'react';
 import wavyLines from '../../img/background-wavy-lines-white.svg';
 import daria from '../../img/daria-pimkina-tYaccl19A3Q-unsplash.jpg';
+import paperz from '../../img/paperz.svg';
+import dorfus from '../../img/dorfus.svg';
+import martino from '../../img/martino.svg';
+import square from '../../img/square.svg';
+import gobona from '../../img/gobona.svg';
+import Button from '../shared/Button';
+import BrandFeatures from './BrandFeatures';
 
 const Brand = () => {
   return (
@@ -9,11 +16,11 @@ const Brand = () => {
         <img className="wavy-lines" src={wavyLines} alt="" />
         <div className="container">
           <div className="brand-top">
-            <img src="./img/paperz.svg" alt="" />
-            <img src="./img/dorfus.svg" alt="" />
-            <img src="./img/martino.svg" alt="" />
-            <img src="./img/square.svg" alt="" />
-            <img src="./img/gobona.svg" alt="" />
+            <img src={paperz} alt="" />
+            <img src={dorfus} alt="" />
+            <img src={martino} alt="" />
+            <img src={square} alt="" />
+            <img src={gobona} alt="" />
           </div>
         </div>
 
@@ -23,34 +30,14 @@ const Brand = () => {
               <div className="section-title features">
                 <p>Features</p>
                 <h2>Our Accounting is trusted by thousand of companies</h2>
-                <button className="btn-theme btn-yellow btn-features" href="">
-                  Learn More<i className="fa-regular fa-arrow-up-right"></i>
-                </button>
+                <Button className="btn-theme btn-yellow btn-features" title="Learn More" type="button" />                
               </div>
 
-              <div className="business-advise">
-                <i className="fa-light fa-handshake"></i>
-                <h3>Business Advice</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit.</p>
-              </div>
-
-              <div className="financial-advise">
-                <i className="fa-light fa-chart-mixed-up-circle-dollar"></i>
-                <h3>Financial Advice</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit.</p>
-              </div>
-
-              <div className="startup">
-                <i className="fa-regular fa-lightbulb-exclamation-on"></i>
-                <h3>Startup Business</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit.</p>
-              </div>
-
-              <div className="risk">
-                <i className="fa-thin fa-block-brick-fire"></i>
-                <h3>Risk Management</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit.</p>
-              </div>
+              <BrandFeatures className="business-advise" iconClass="fa-light fa-handshake" title="Business Advice" />
+              <BrandFeatures className="financial-advise" iconClass="fa-light fa-chart-mixed-up-circle-dollar" title="Financial Advice" />
+              <BrandFeatures className="startup" iconClass="fa-regular fa-lightbulb-exclamation-on" title="Startup Business" />
+              <BrandFeatures className="risk" iconClass="fa-thin fa-block-brick-fire" title="Risk Management" />
+            
             </div>
           </div>
         </div>

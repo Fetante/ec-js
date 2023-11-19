@@ -1,6 +1,7 @@
 import { useFormik } from "formik"
 import { useState } from "react"
 import * as Yup from 'yup'
+import Button from "../shared/Button"
 
 export const RegForm = () => {
     const [errorMessage, setErrorMessage] = useState('')
@@ -74,9 +75,10 @@ export const RegForm = () => {
                         <label className={form.errors.message && form.touched.message ? 'error' : ''}>{form.errors.message && form.touched.message ? form.errors.message : 'Meddelande'}</label>
                         <textarea placeholder="Your message" name="message" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur} />
                     </div>
-                    <button className="btn-yellow btn-theme" type='submit'>
-                        Send Message<i className="fa-regular fa-arrow-up-right"></i>
-                    </button>
+
+                    <Button className="btn-yellow btn-theme" title="Send Message" type="submit" />
+
+                   
                 </form>
             </div>
         </div>
