@@ -1,29 +1,18 @@
-import React, { useEffect, useState, useCallback  } from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { format } from 'date-fns';
+import { useArticles } from '../../contexts/ArticleContext'; 
 
 const Article = () => {
     const { id } = useParams();
+    const { article, getArticle } = useArticles();
     
-    // Hämta artikeln  
-    const [article, setArticle] = useState({})
-
-    
-
-    const getArticle = useCallback(async () => {
-        if (id !== undefined) {
-            const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-            
-            if (result.status === 200)
-                setArticle(await result.json())
-        }
-    }, [id]); // Lägg till 'id' som ett beroende för useCallback
-
     useEffect(() => {
-        getArticle()
-    }, [getArticle])
+        getArticle(id)
+    }, [])
     
-    const formattedDate = article.published
+    
+    const formattedDate = article?.published
     ? format(new Date(article.published), 'MMM dd, yyyy')
     : '';
 
@@ -32,16 +21,30 @@ const Article = () => {
     <>
         <div className="container article-wrapper">
             <div className="article-card">
-                <h2>{article.title}</h2>
-                <p>{formattedDate}</p>
-                <p className="yellow-circle"></p>
-                <p>{article.category}</p>
-                <p className="yellow-circle"></p>
-                <p>{article.author}</p>
-                <img src={article.imageUrl} alt="bild-titel" />
-                <p className="article-text">
-                    {article.content}
-                </p>
+                {
+                    article ? 
+                    (
+                        <>
+                            <h2>{article.title}</h2>
+                            <p>{formattedDate}</p>
+                            <p className="yellow-circle"></p>
+                            <p>{article.category}</p>
+                            <p className="yellow-circle"></p>
+                            <p>{article.author}</p>
+                            <img src={article.imageUrl} alt="bild-titel" />
+                            <p className="article-text">
+                                {article.content}
+                            </p>
+                        </>
+                    )
+                    :
+                    (
+                        <div>
+                            Laddar
+                        </div>
+                    )
+                }
+                
 
                 <div className="quotes">
                     <div className="icon-quotes">

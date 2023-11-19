@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { useArticles } from '../../contexts/ArticleContext'; 
 
 const Articles = () => {
-  const [articles, setArticles] = useState([]);
 
-  useEffect(() => {
-    getArticles();
-  }, []);
 
-  const getArticles = async () => {
-    const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
-    setArticles(await result.json());
-  };
-
+  const { articles } = useArticles()
+  
   // Funktion för att formatera datumet
   const formatDate = (publishedDate) => {
     const date = new Date(publishedDate);
