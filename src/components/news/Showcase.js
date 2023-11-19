@@ -1,5 +1,6 @@
 import React from 'react'
 import backgroundLines from '../../img/background-lines.svg'
+import { Link } from 'react-router-dom'
 
 const Showcase = () => {
   return (
@@ -9,8 +10,9 @@ const Showcase = () => {
                 <img className="wavy-lines" src={backgroundLines} alt=""/>
                 <div className="container">
                     <div className="links">
-                        <a href="/">Home</a>
-                        <a href="news">News</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/news">News</Link>                        
+                        
                     </div>
                     <h1>News & Articles</h1>                    
                 </div>

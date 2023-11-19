@@ -1176,6 +1176,12 @@ header .main-menu nav a:hover {
   height: 460px;
   margin: 0 10px;
 }
+.news-section .container .business-card-wrapper a{
+  text-decoration: none;
+}
+.news-section .container .business-card-wrapper a h3{
+  color: #191919;
+}
 .news-section .container .business-card-wrapper .business-card .img-container {
   position: relative;
 }
@@ -1460,6 +1466,7 @@ footer .footer-bottom .container .social-media a i {
 }
 .connect-showcase-section .lets-connect .links {
   margin-bottom: 7px;
+  z-index: 10;
 }
 .connect-showcase-section .lets-connect .links button {
   margin-right: 15px;
@@ -1667,9 +1674,12 @@ footer .footer-bottom .container .social-media a i {
   color: #191919;
 }
 
-.articles .article-item {
+.articles .img-container {
+  position: relative; 
+}
+.articles .article-item {  
   width: 100%;
-  height: 428px; /* Fyll hela höjden av föräldern (grid-raden) */
+  height: 428px; 
   display: flex;
   flex-direction: column;
 }
@@ -1692,13 +1702,38 @@ footer .footer-bottom .container .social-media a i {
   color: #6a6c71;
   flex-grow: 1;
 }
-
 .articles .article-item img {
   width: 100%;
-  height: 50%;
+  height: 100%;
+  max-height: 230px;
   object-fit: cover; /* Fyll hela utrymmet utan att deformeras */
 }
-
+.articles .date-sticker {
+  position: absolute;
+  z-index: 2;
+  background-color: #F9D783;
+  width: 56px;
+  height: 64px;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.articles .date-sticker .date-month {
+  margin-bottom: 2px;
+  margin-top: -10px;
+}
+.articles .date-sticker .date-number {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  color: #191919;
+}
 .article-wrapper {
   display: flex;
   margin-top: 130px;

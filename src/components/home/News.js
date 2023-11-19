@@ -2,6 +2,10 @@ import React from 'react'
 import business from '../../img/business1.jpg'
 import business2 from '../../img/business2.jpg'
 import business3 from '../../img/business3.jpg'
+import { Link } from 'react-router-dom';
+import NewsCard from './NewsCard';
+
+
 
 const News = ({backgroundColor }) => {
   return (
@@ -13,51 +17,15 @@ const News = ({backgroundColor }) => {
                     <p>Article & News</p>
                     <h2>Get Every Single Article & News</h2>
                 </div>
-                <div className="browse-articles">
-                    <button className="btn-theme btn-transparent" href="">Browse Articles<i className="fa-regular fa-arrow-up-right"></i></button>
-                </div>
+                <Link to="/news" className="btn-theme btn-transparent">
+                    Browse Articles<i className="fa-regular fa-arrow-up-right"></i>               
+                </Link>
             </div>
 
             <div className="business-card-wrapper">
-
-                <div className="business-card">
-                    <div className="img-container">
-                        <div className="date-sticker">
-                            <p className="date-number">25</p>
-                            <p>Mar</p>
-                        </div>
-                        <img src={business} alt=""/>
-                    </div>
-                    <p>Business</p>                
-                    <h3>How To Use Digitalization In The Classroom</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </div>
-
-                <div className="business-card">
-                    <div className="img-container">
-                        <div className="date-sticker">
-                            <p className="date-number">17</p>
-                            <p>Mar</p>
-                        </div>
-                        <img src={business2} alt=""/>
-                    </div>                    
-                    <p>Business</p>
-                    <h3>How To Implement Chat GPT In Your Projects</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </div>
-
-                <div className="business-card">
-                    <div className="img-container">
-                        <div className="date-sticker">
-                            <p className="date-number">13</p>
-                            <p>Mar</p>
-                        </div>
-                        <img src={business3} alt=""/>
-                    </div>                    
-                    <p>Business</p>
-                    <h3>The Guide To Support Modern CSS Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </div>
+                <NewsCard dateNumber="25" month="Mar" imgObj={business} text="Business" title="How To Use Digitalization In The Classroom" />
+                <NewsCard dateNumber="17" month="Mar" imgObj={business2} text="Business" title="How To Implement Chat GPT In Your Projects" />
+                <NewsCard dateNumber="13" month="Mar" imgObj={business3} text="Business" title="The Guide To Support Modern CSS Design" />
             </div>
 
         </div>
