@@ -11,7 +11,7 @@ import { ArticleProvider } from "./contexts/ArticleContext";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ArticleProvider>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </ArticleProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
